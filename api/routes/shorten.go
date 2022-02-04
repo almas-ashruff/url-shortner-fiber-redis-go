@@ -27,6 +27,7 @@ type response struct {
 	XRateLimitReset time.Duration `json:"rate_limit_reset"`
 }
 
+// passing the fiber context as parameter
 func ShortenURL(c *fiber.Ctx) error {
 	body := new(request)
 
